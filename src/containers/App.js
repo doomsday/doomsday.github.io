@@ -9,11 +9,11 @@ class App extends Component {
     render() {
         // This props are from mapStateToProps
         const { user, page } = this.props
-        const { setYear } = this.props.pageActions
+        const { getPhotos } = this.props.pageActions
 
         return <div>
             <User name={user.name} />
-            <Page photos={page.photos} year={page.year} setYear={setYear} />
+            <Page photos={page.photos} year={page.year} getPhotos={getPhotos} fetching={page.fetching} />
         </div>
     }
 }
