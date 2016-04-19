@@ -7,7 +7,6 @@ var precss = require('precss')
 module.exports = {
     devtool: 'source-map',
     entry: [
-        'webpack-hot-middleware/client',
         'babel-polyfill',
         './src/index'
     ],
@@ -32,8 +31,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.js$/,
-                loaders: ['react-hot', 'babel-loader'],
-                plugins: ['transform-runtime'],
+                loaders: ['babel-loader'],
                 include: [path.resolve(__dirname, 'src')]
             },
             {
