@@ -20,7 +20,7 @@ class App extends Component {
     }
 }
 
-/**
+/** 
  * Сomponent will subscribe to Redux store updates. Any time it updates,
  * mapStateToProps will be called. Its result must be a plain object*, and it
  * will be merged into the component’s props */
