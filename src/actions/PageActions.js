@@ -7,6 +7,7 @@ import {
  * This is ActionCreator. In Redux action creators simply return an action. */
 export function getPhotos(year) {
     return (dispatch) => {
+        
         dispatch({
             type: GET_PHOTOS_REQUEST,
             payload: year
