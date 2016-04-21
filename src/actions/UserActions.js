@@ -11,7 +11,7 @@ export function handleLogin() {
             type: LOGIN_REQUEST
         })
         
-        VK.Auth.login((r) => {
+        VK.Auth.login((r) => { //	eslint-disable-line	no-undef
             if (r.session) {
                 let username = r.session.user.first_name
                 
