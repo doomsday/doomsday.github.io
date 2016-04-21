@@ -14,7 +14,7 @@ class App extends Component {
         const { handleLogin } = this.props.userActions
 
         return <div className='row'>
-            <Page photos={page.photos} year={page.year} getPhotos={getPhotos} fetching={page.fetching} />
+            <Page photos={page.photos} year={page.year} getPhotos={getPhotos} fetching={page.fetching} error={page.error} />
             <User name={user.name} handleLogin={handleLogin} error={user.error} />
         </div>
     }
